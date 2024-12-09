@@ -1,0 +1,65 @@
+[
+    {
+      "imgSrc": "/assets/booki.webp",
+      "title": "Booki",
+      "description": "Agence de voyage",
+      "skills": ["/assets/htmlLogo.png", "/assets/cssLogo.png"],
+      "pictures": [
+    "/assets/booki_image1.png",
+    "/assets/booki_image2.png",
+    "/assets/booki_image3.png"
+  ]
+    },
+    {
+      "imgSrc": "/assets/sophie.webp",
+      "title": "Sophie Bluel",
+      "description": "Projet de l'architecte",
+      "skills": ["/assets/htmlLogo.png", "/assets/cssLogo.png","/assets/jsLogo.png"],
+      "pictures": [
+    "/assets/sophie_image1.png",
+    "/assets/sophie_image2.png",
+    "/assets/sophie_image3.png",
+    "/assets/sophie_image4.png",
+    "/assets/sophie_image5.png"
+      ]
+    },
+    {
+        "imgSrc": "/assets/nina.webp",
+        "title": "Nina Carducci",
+        "description": "Projet de la photographe",
+        "skills": ["/assets/htmlLogo.png", "/assets/cssLogo.png","/assets/jsLogo.png"],
+        "pictures": [
+      "/assets/nina_image1.png",
+      "/assets/nina_image2.png",
+      "/assets/nina_image3.png",
+      "/assets/nina_image4.png"
+        ]
+      },
+      {
+        "imgSrc": "/assets/kasa.webp",
+        "title": "Kasa",
+        "description": "Projet de la location de logements",
+        "skills": ["/assets/htmlLogo.png", "/assets/cssLogo.png","/assets/jsLogo.png", "/assets/reactLogo.png"],
+        "pictures": [
+      "/assets/kasa_image1.png",
+      "/assets/kasa_image2.png",
+      "/assets/kasa_image3.png",
+      "/assets/kasa_image4.png"
+
+        ]
+      },
+      {
+        "imgSrc": "/assets/mvg.webp",
+        "title": "Mon Vieux Grimoire",
+        "description": "Projet de notation de livres",
+        "skills": ["/assets/jsLogo.png","/assets/nodeLogo.png","/assets/expressLogo.png","/assets/mongoLogo.png"],
+        "pictures": [
+      "/assets/mvg_image1.png",
+      "/assets/mvg_image2.png",
+      "/assets/mvg_image3.png",
+      "/assets/mvg_image4.png"
+
+        ]
+      }
+  ]
+  
