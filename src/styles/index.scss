@@ -130,12 +130,7 @@ ul {
   background-image: url("../assets/background1.webp");
   min-height: 100vh;
   margin: 0;
-  //position:absolute;
 }
-
-// .homePage {
-//   display: flex;
-// }
 
 .profile_IS {
   width: 20vw;
@@ -190,6 +185,13 @@ ul {
   justify-content: center;
   padding: 130px 245px;
   text-align: center;
+  & :hover {
+    transform: scale(1.15);
+  }
+  & > :hover {
+    transition: transform 0.2s ease-in;
+    transform: translateY(-15px) scale(1.1);
+  }
 }
 
 .skill-card {
@@ -197,7 +199,7 @@ ul {
   flex-direction: column;
   align-items: center;
   width: 150px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255);
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -244,6 +246,7 @@ ul {
   max-width: 20em;
   margin: 0 30px;
   text-decoration: none;
+  cursor: pointer;
   &__logos {
     display: flex;
     gap: 10px;
@@ -296,7 +299,7 @@ ul {
 .SlideShow {
   position: relative;
   background-color: #ffe9d4;
-  top: -9px;
+  top: 0px;
   right: -10px;
   height: 418px;
   width: 780px;
@@ -333,13 +336,13 @@ ul {
     position: relative;
     top: -10px;
     z-index: 1;
-    padding: 42px;
+    padding: 0 42px;
   }
 }
 
 .imageCount {
   position: absolute;
-  top: 430px;
+  top: 426px;
   left: 50%;
   transform: translateX(-50%);
   color: $white;
@@ -374,27 +377,97 @@ ul {
   }
 }
 
-/*****************************************Page Error404**************************************/
-.Error404 {
-  color: $red;
-  @include flex-center;
-  flex-direction: column;
-  & h1 {
-    font-size: 19em;
-    margin: 0.2em;
+.modal__description {
+  margin-top: 25px;
+  //overflow-y: auto; // Scrollbar uniquement si le contenu déborde
+  max-height: 400px; // Limite la hauteur visible
+  line-height: 1.6;
+  font-size: 18px;
+  &__link{
+    font-size:24px;
+    margin:20px 0;
   }
-  & h2 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 200px;
-    margin-top: 47px;
-    text-align: center;
+  
+}
+
+.seeCode{
+  position: relative;
+  top: -25px; 
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+/************Collapse****************/
+.Collapse {
+  position: relative;
+  z-index: 2;
+  background-color: #705edb;
+  width: 100%;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  @include flex-space-between;
+  border-radius: 15px;
+  margin: 20px;
+  cursor: pointer;
+  &__container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    gap: 80px;
+    & > .Collapse {
+      flex: 1;
+    }
   }
-  &__link {
-    color: $black;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 100px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    flex: 1 1;
+  }
+  &__content {
+    width: 96%;
+    list-style: none;
+    position: relative;
+    top: -50px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateY(0px);
+
+    &.open {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 10px;
+      transform: translateY(50px);
+    }
+  }
+  &__content--inner {
+    padding: 5px 0;
+    text-align: left;
+    width: 100%;
+  }
+  & div,
+  & img {
+    padding: 10px 15px;
+  }
+}
+
+.Arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+  &.open {
+    transform: rotate(-180deg);
   }
 }
 
@@ -443,6 +516,13 @@ ul {
   //   margin: 20px 30px 0 30px;
   // }
   /*********Page Home*********/
+
+  .homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .main-container {
     width: 100%;
   }
@@ -468,11 +548,15 @@ ul {
       align-items: normal;
       margin: 20px 0;
     }
+    &__link {
+      margin-right: 0px;
+      text-align: center;
+    }
   }
   .profile_IS {
     width: 200px;
-    position: relative;
-    left: 20px;
+    // position: relative;
+    // left: 20px;
     float: none;
   }
   .presentation-text {
@@ -480,8 +564,8 @@ ul {
     height: fit-content;
     padding: 21px;
     position: relative;
-    top: 22px;
-    left: 11vw;
+    top: -18px;
+    left: 0vw;
   }
 
   .card {
@@ -529,26 +613,16 @@ ul {
   .skill-card {
     width: 250px;
   }
-  /*********Page Error404*********/
-  .Error404 {
-    & h1 {
-      font-size: 8.5em;
-      margin: 1em;
-    }
-    & h2 {
-      display: inline;
-      font-size: 24px;
-      text-align: center;
-      // width: 300px;
-    }
-    &__link {
-      margin-bottom: 150px;
-      font-size: 20px;
-    }
-    &__span {
-      display: block;
-    }
+  /*********Modale & Collapse*********/
+  .modal__description {
+    margin-top: 70px;
+    font-size: 20px;
   }
+  .Collapse{
+    margin: 10px;
+    &__wrapper {
+    max-width: 100%;
+  }}
 
   /*********Page Portfolio*********/
   .SlideShow__photo {
@@ -575,19 +649,28 @@ ul {
   }
 
   .SlideShow__arrows {
-    width: 15%;
+    width: 35%;
   }
 
   .imageCount {
-    top: 640px;
+    top: 435px;
     font-size: 18px;
   }
+
+  .seeCode {
+    position: relative;
+    top: 4px;
+    left: 18%;
+  }
+/***************Page contact******************/
+.contact_text {
+  top: 51px;
+  left: 23vw;
+  width:53vw;
 }
 
-// @media (max-width: 530px) {
-//   .Header {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 100%;
-//   }
-// }
+.mail {
+  width: 14vw;
+  margin-top: 20px;
+}
+}

@@ -4,6 +4,8 @@ import { useState, useEffect } from "react"
 import Modal from "react-modal"
 import Card from "../../components/Card"
 import SlideShow from "../../components/SlideShow"
+import Collapse from "../../components/Collapse"
+import { Link } from "react-router-dom"
 
 Modal.setAppElement("#root")
 
@@ -43,6 +45,7 @@ const CardWrapper = () => {
           style={{
             content: {
               backgroundColor: "#6a72ae",
+              inset: "20px",
               borderRadius: "20px",
               border: "none", // Retirer la bordure par défaut
               padding: "20px", // Ajout d'un peu de padding
@@ -53,8 +56,37 @@ const CardWrapper = () => {
               backgroundColor: "rgba(0, 0, 0, 0.7)", // Assombrir l'arrière-plan
             },
           }}>
-          <h2 style={{ color: "#fff" }}>{selectedCard.title}</h2>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", position: "relative" }}>
+    <Link
+      to={selectedCard.lien}
+      target="_blank"
+      style={{
+        color: "#fff",
+        fontSize: "24px",
+        textDecoration: "none",
+        transition: "color 0.3s",
+        position: "relative",
+      }}
+      onMouseEnter={e => {
+        const tooltip = e.target.nextElementSibling;
+        tooltip.style.opacity = "1";
+        tooltip.style.visibility = "visible";
+      }}
+      onMouseLeave={e => {
+        const tooltip = e.target.nextElementSibling;
+        tooltip.style.opacity = "0";
+        tooltip.style.visibility = "hidden";
+      }}>
+      {selectedCard.title}
+    </Link>
+    <span className="seeCode">
+      Voir le code
+    </span>
+  </div>
           <SlideShow pictures={selectedCard.pictures} />
+          <div className="modal__description">
+            <Collapse title="Détails" content={selectedCard.paragraphe} />
+          </div>
           <button className="modal-close" onClick={closeModal} style={{ backgroundColor: "#fff", border: "none", borderRadius: "10px" }}>
             X
           </button>
