@@ -1,70 +1,70 @@
 [
     {
-      "imgSrc": "/assets/booki.webp",
+      "imgSrc": "booki.webp",
       "title": "Booki",
       "description": "Agence de voyage",
-      "skills": ["/assets/htmlLogo.webp", "/assets/cssLogo.webp"],
+      "skills": ["htmlLogo.webp", "cssLogo.webp"],
       "pictures": [
-    "/assets/booki_image1.webp",
-    "/assets/booki_image2.webp",
-    "/assets/booki_image3.webp"
+    "booki_image1.webp",
+    "booki_image2.webp",
+    "booki_image3.webp"
   ],
       "paragraphe": "Ce projet m'a permis d'implémenter une interface responsive en utilisant HTML et CSS, de manière à assurer une expérience utilisateur optimale sur différents appareils. J'ai également acquis la compétence d'intégrer du contenu de façon précise et conforme à une maquette, renforçant ainsi mon souci du détail. Par ailleurs, j'ai appris à versionner mon travail efficacement grâce à Git et GitHub, ce qui m'a permis de collaborer et de gérer les modifications de code de manière structurée. Enfin, j'ai installé et configuré un environnement de développement front-end, consolidant mes bases techniques pour initier et gérer des projets web.",
       "lien": "https://github.com/ingridnco/Booki"
     },
     {
-      "imgSrc": "/assets/sophie.webp",
+      "imgSrc": "sophie.webp",
       "title": "Sophie Bluel",
       "description": "Projet de l'architecte",
-      "skills": ["/assets/htmlLogo.webp", "/assets/cssLogo.webp","/assets/jsLogo.webp"],
+      "skills": ["htmlLogo.webp", "cssLogo.webp","jsLogo.webp"],
       "pictures": [
-    "/assets/sophie_image1.webp",
-    "/assets/sophie_image2.webp",
-    "/assets/sophie_image3.webp",
-    "/assets/sophie_image4.webp",
-    "/assets/sophie_image5.webp"
+    "sophie_image1.webp",
+    "sophie_image2.webp",
+    "sophie_image3.webp",
+    "sophie_image4.webp",
+    "sophie_image5.webp"
       ],
       "paragraphe": "J'ai pu apprendre à gérer les événements utilisateurs avec JavaScript, ce qui m'a donné la capacité d'interagir dynamiquement avec l'utilisateur en fonction de ses actions. J'ai également appris à manipuler les éléments du DOM, ce qui m'a permis de modifier l'interface en temps réel et d'améliorer l'interactivité du site. De plus, j'ai maîtrisé la récupération des données utilisateurs via des formulaires en JavaScript, renforçant ainsi mes compétences dans la gestion des entrées utilisateur et la validation de ces données pour une expérience fluide et fonctionnelle.",
       "lien": "https://github.com/ingridnco/Portfolio_architecte"
     },
     {
-        "imgSrc": "/assets/nina.webp",
+        "imgSrc": "nina.webp",
         "title": "Nina Carducci",
         "description": "Projet de la photographe",
-        "skills": ["/assets/htmlLogo.webp", "/assets/cssLogo.webp","/assets/jsLogo.webp"],
+        "skills": ["htmlLogo.webp", "cssLogo.webp","jsLogo.webp"],
         "pictures": [
-      "/assets/nina_image1.webp",
-      "/assets/nina_image2.webp",
-      "/assets/nina_image3.webp",
-      "/assets/nina_image4.webp"
+      "nina_image1.webp",
+      "nina_image2.webp",
+      "nina_image3.webp",
+      "nina_image4.webp"
         ],
       "paragraphe": "J'ai pu optimiser les performances d'un site web, en mettant en œuvre des techniques pour réduire les temps de chargement et améliorer l'efficacité globale. J'ai également appris à débugger un site web grâce aux Chrome DevTools, ce qui m'a permis d'identifier et de corriger les erreurs de manière rapide et précise. Enfin, j'ai rédigé un cahier de recette pour tester le site, ce qui m'a permis de formaliser les scénarios de test et de m'assurer que toutes les fonctionnalités répondaient aux exigences avant la mise en production.",
       "lien": "https://github.com/ingridnco/Nina-Carducci"
       },
       {
-        "imgSrc": "/assets/kasa.webp",
+        "imgSrc": "kasa.webp",
         "title": "Kasa",
         "description": "Projet de la location de logements",
-        "skills": ["/assets/htmlLogo.webp", "/assets/cssLogo.webp","/assets/jsLogo.webp", "/assets/reactLogo.webp"],
+        "skills": ["htmlLogo.webp", "cssLogo.webp","jsLogo.webp", "reactLogo.webp"],
         "pictures": [
-      "/assets/kasa_image1.webp",
-      "/assets/kasa_image2.webp",
-      "/assets/kasa_image3.webp",
-      "/assets/kasa_image4.webp"
+      "kasa_image1.webp",
+      "kasa_image2.webp",
+      "kasa_image3.webp",
+      "kasa_image4.webp"
         ],
       "paragraphe": "Ce projet m'a permis d'initialiser une application avec Create React App, facilitant ainsi le démarrage rapide du développement. J'ai configuré la navigation entre les pages de l'application en utilisant React Router, assurant une expérience utilisateur fluide. En développant des composants React pour l'interface, j'ai optimisé la réutilisabilité du code et la modularité du site. J'ai aussi intégré des animations CSS pour rendre l'interface plus dynamique et engageante. Enfin, j'ai utilisé Sass pour développer une interface web structurée et maintenable, en tirant parti de ses fonctionnalités avancées comme les variables et les mixins.",
       "lien": "https://github.com/ingridnco/kasa_react"
       },
       {
-        "imgSrc": "/assets/mvg.webp",
+        "imgSrc": "mvg.webp",
         "title": "Mon Vieux Grimoire",
         "description": "Projet de notation de livres",
-        "skills": ["/assets/jsLogo.webp","/assets/nodeLogo.webp","/assets/expressLogo.webp","/assets/mongoLogo.webp"],
+        "skills": ["jsLogo.webp","nodeLogo.webp","expressLogo.webp","mongoLogo.webp"],
         "pictures": [
-      "/assets/mvg_image1.webp",
-      "/assets/mvg_image2.webp",
-      "/assets/mvg_image3.webp",
-      "/assets/mvg_image4.webp"
+      "mvg_image1.webp",
+      "mvg_image2.webp",
+      "mvg_image3.webp",
+      "mvg_image4.webp"
         ],
       "paragraphe": "Dans ce projet, j'ai implémenté un modèle logique de données respectant la réglementation, garantissant ainsi la conformité légale des informations traitées. J'ai mis en œuvre des opérations CRUD de manière sécurisée, en veillant à protéger les données et à éviter les vulnérabilités courantes. En parallèle, j'ai appliqué des bonnes pratiques pour stocker les données de façon sécurisée, en assurant leur intégrité et leur confidentialité tout au long du processus de gestion.",
       "lien": "https://github.com/ingridnco/Mon_vieux_grimoire"

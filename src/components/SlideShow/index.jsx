@@ -31,7 +31,7 @@ const SlideShow = ({ pictures }) => {
       <div className="SlideShow__pics">
         <div className="SlideShow__anim" style={SlideShowStyle}>
           {pictures.map((picture, index) => (
-            <img key={`photo-${index}`} className="SlideShow__photo" src={picture} alt={`Slide ${index + 1}`} />
+            <img key={`photo-${index}`} className="SlideShow__photo" src={require(`../../assets/${picture}`)} alt={`Slide ${index + 1}`} />
           ))}
         </div>
         {totalImages > 1 && (
